@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <title>survey form</title>
+    </head>
+    <body>
+        <div class="menu-back"></div>
+        <div class="close-openPopup"><img src="assets/icons/Icon metro-cancel.svg" alt=""></div>
+        <div class="openPopup medium-font">
+            <h2 class="openPopup-h2">რეგისტრაცია</h2>
+            <div style="text-align: left; margin-top: 55px;">
+                <div class="openPopup-item" style="display: flex;flex-direction: row;">
+                    <div>სახელი:</div><span style="margin-left: 42px;" id="word-fname">erferf</span>
+                </div>
+                <div class="openPopup-item" style="display: flex;flex-direction: row;">
+                    <div>გვარი:</div><span style="margin-left: 56px;" id="word-lname">hbhj</span>
+                </div>
+                <div class="openPopup-item" style="display: flex;flex-direction: row;">
+                    <div>რეგიონი:</div><span style="margin-left: 33px;" id="word-region">sheavset veli</span>
+                </div>
+                <div class="openPopup-item" style="display: flex;flex-direction: row;">
+                    <div>პოზიცია:</div><span style="margin-left: 35px;" id="word-position"></span>
+                </div>
+                <div class="openPopup-item" style="display: flex;flex-direction: row;">
+                    <div>ელ.ფოსტა:</div><span style="margin-left: 20px;" id="word-mail"></span>
+                </div>
+            </div>
+        </div>
+        <header>
+                <div class="s">
+                    <img src="assets/icons/Group 767.svg" alt="">
+                </div>
+                <nav class="menu">
+                    <div class="burger">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </div>
+                    <div class="closeMenu">
+                        <div class="closeMenu-line"></div>
+                        <div class="closeMenu-line2"></div>
+                    </div>
+                    <ul class="nav-bar medium-font">
+                            <li><a style="color: #7279FF;" href="">ჩვენზე</a></li>  
+                            <li><a style="color: black ;" href="">თემები</a></li>
+                            <li><a style="color: black ;" href="">რესურსები</a></li>
+                    </ul>
+                    <div class="sign-in">
+                        <div class="sign-in1">
+                            <img src="assets/icons/Icon metro-user.svg" alt="">
+                            <a class="medium-font"style="color: white;margin-left: 6px;"href="">შესვლა</a>
+                        </div>
+                    </div>
+                    <div class="search-rect">
+                        <img style="margin: 13px;" src="assets/icons/Icon feather-search.svg" alt="">
+                    </div>
+                </nav>
+        </header>
+        <main>
+            <div class="home-registration">
+                <a style="color: black; font-weight: bold;" href="">მთავარი</a>
+                <div class="div-angle">
+                    <i class="fa fa-angle-right"></i>
+                </div>
+                <a style="color: black; font-weight: bold;" href="">რეგისტრაცია</a>
+            </div>
+            <div class="div-h1 medium-font">
+                <h1>რეგისტრაცია</h1>
+            </div>
+            <div class="div-p" id="link">
+                <p class="text" >ავტორიზაცია შესაძლებელია მხოლოდ განმანათლებლებისთვის</p>
+            </div>
+            <form name="RegForm" class="medium-font" action="">
+                    <div class="astr1">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                    <label    id="red-region"   name="region"  for="region">რეგიონი</label>
+                    <div class="dropdown">
+
+                            <div class="dropdown-select" id="selectField">
+                                <span style="font-weight: 100; opacity: 0.3;" id="selectText">აირჩიეთ რეგიონი</span>
+                                <img src="assets/icons/Icon material-arrow-drop-down.svg" alt="">
+                            </div>
+                            <div class="dropdown-list" id="region">
+                                <section>
+                                    <div class="dropdown-list_item underline" id="TBILISI" value="TBILISI"><option>თბილისი</option></div>
+                                    <div class="dropdown-list_item" id="APKhAZETI"><option>აფხაზეთი</option></div>
+                                    <div class="dropdown-list_item" id="ACHARA" ><option>აჭარა</option></div>
+                                    <div class="dropdown-list_item" id="GURIA" ><option>გურია</option></div>
+                                    <div class="dropdown-list_item" id="IMERETI" ><option>იმერეთი</option></div>
+                                    <div class="dropdown-list_item" id="KAXETI" ><option>კახეთი</option></div>
+                                    <div class="dropdown-list_item" id="MCXETA-MTIANETI" ><option>მცხეთა-მთიანეთი</option></div>
+                                    <div class="dropdown-list_item" id="RACHA-LECHXUMI-QVEMOSVANETI" ><option>რაჭა-ლეჩხუმი და ქვემო სვანეთი</option></div>
+                                    <div class="dropdown-list_item" id="SAMEGRELO-ZEMOSVANETI" ><option>სამეგრელო-ზემო სვანეთი</option></div>
+                                    <div class="dropdown-list_item" id="SAMCXE-JAVAXETI" ><option>სამცხე-ჯავახეთი</option></div>
+                                    <div class="dropdown-list_item" id="QVEMO-QARTLI" ><option>ქვემო ქართლი</option></div>
+                                    <div class="dropdown-list_item" id="SHIDA-QARTLI" ><option>შიდა ქართლი</option></div>
+                                </section>
+                            </div>
+                    </div>
+                    
+
+                    <label    id="red-position"   name="position"  for="position">პოზიცია</label>
+                    <div class="astr2">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+
+                    <div class="dropdown">
+                        
+                        <div class="dropdown-select">
+                            <span style="font-weight: 100; opacity: 0.3;" id="selectText2">აირჩიეთ პოზიცია</span>
+                            <img src="assets/icons/Icon material-arrow-drop-down.svg" alt="">
+                        </div>
+                        <div class="dropdown-list2">
+                            <section>
+                                <div class="dropdown-list_item underline" id="teacher" value="teacher"><option>მასწავლებელი</option></div>
+                                <div class="dropdown-list_item" id="policeman" value="policeman"><option>სამართალდამცავი</option></div>
+                                <div class="dropdown-list_item" id="other" value="other"><option>სხვა</option></div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="close-other" ><img src="assets/icons/cancel.svg" alt=""></div>
+                    <label id="other-position"      for="ocupation">სხვა პოზიცია</label>
+                    <input name="text" type="text" id="text">
+
+                    <label         for="ocupation">სამუშაო ადგილი</label>
+                    <input  name="ocupation" required id="ocupation">
+
+                    <label   id="red-mail"      for="email">ელ.ფოსტა</label>
+                    <div class="astr3">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                    <input type="email"  name="mail" required id="mail">
+
+                    <label    id="red-fname"     for="fname">სახელი</label>
+                    <div class="astr4">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                    <input  name="fname" required id="fname" >
+
+                    <label    id="red-lname"     for="lname">გვარი</label>
+                    <div class="astr5">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                    <input  name="lname" required id="lname">
+
+                    <div class="eye1">
+                        <img src="assets/icons/Icon feather-eye.svg" alt="">
+                    </div>
+                    <div class="hidden-eye1">
+                        <img src="assets/icons/Group 768.svg" alt="">
+                    </div>
+
+                        <label    id="red-pwd"   name="pwd"  for="pwd">პაროლი</label>
+                    <div class="astr6">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                    <input type ="password" maxlength="16" name="pwd" required id="pwd">
+
+                    <div class="eye2">
+                        <img src="assets/icons/Icon feather-eye.svg" alt="">
+                    </div>
+                    <div class="hidden-eye2">
+                        <img src="assets/icons/Group 768.svg" alt="">
+                    </div>
+                    <label    id="red-repwd"  name="repwd"   for="repwd">გაიმეორეთ პაროლი</label>
+                    <div class="astr7">
+                        <i class="fa fa-asterisk"></i>
+                    </div>
+                    <input type="password" maxlength="16" name="repwd" required id="repwd">
+                
+                
+                <label class="container">ვეთახმები პლატფორმის <span class="span-text">მოხმარების პირობებს</span>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+
+                <label class="container">გავეცანი <span class="span-text">კონფიდენციალურობის პოლიტიკას</span>
+                    <input type="checkbox" checked="checked">
+                    <span class="checkmark"></span>
+                </label>
+                
+                <div class="button-reg medium-font">
+                    <button style="background-color: #7279FF;border: none;padding: 0px;" type="submit" ><a href="#link" class="medium-font button-reg2">რეგისტრაცია</a></button><!--onclick="incorrect()"-->
+                </div>
+
+            </form>
+             
+            <div class="remind">
+                <h2>გთხოვთ შეავსოთ ყველა ველი</h2>
+            </div>
+            <div class="div-line">
+                <div class="line ine1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+                <div class="line line4"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <h2 class="or">ან</h2>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line 1line"></div>
+                <div class="line 2line"></div>
+                <div class="line 3line"></div>
+            </div>
+            <div class="fb-reg medium-font">
+                <div class="fb-icon">
+                    <img src="assets/icons/Icon awesome-facebook-f.svg" alt="">
+                </div>
+                <h2>რეგისტრაცია Facebook-ით</h2>
+            </div> 
+            <div class="gmail-reg medium-font">
+                <div class="gm-icon">
+                    <img src="assets/icons/Icon simple-google.svg" alt="">
+                </div>
+                <h2>რეგისტრაცია Gmail-ით</h2>
+            </div> 
+            <div class="qlink">
+                <h2>უკვე რეგისტრირებული ხართ?<a style="text-decoration: underline;" href="">მიყევით ამ ბმულს</a></h2>
+            </div>       
+        </main>
+        <footer>
+                <div class="inf">
+                    <a style="color: #202631;" href="">info@school.ge</a>
+                    <div class="foot-line"></div>
+                    <div class="fb-foot">
+                        <img src="assets/icons/facebook.svg" alt="">
+                    </div>
+                    <div class="yt-foot">
+                        <img src="assets/icons/youtube.svg" alt="">
+                    </div>
+                </div>
+                <div class="foot-nav">
+                    <div class="foot-line1"></div>
+                    <div class="foot-line2"></div>
+                
+                    <a class="a-text" href="">მოხმარების პირობები</a>
+                    <a class="a-text2"href="">კონფიდენციალურობა</a>
+                    <div class="third-text">
+                        <a style="color: #202631;" href="">© 2021 ყველა უფლება დაცულია</a>
+                    </div>
+                </div>
+                
+        </footer>
+        <script src="./app.js"></script>
+    </body>
+</html>
